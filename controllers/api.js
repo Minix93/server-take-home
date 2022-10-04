@@ -65,6 +65,9 @@ exports.getCampaign = async (req, res) =>{
 }
 
 
+/**
+ * endpoint: "deletecampaign"
+ */
 
 //TODO: refactor the function to realize relationship deletion in the future
 
@@ -85,6 +88,7 @@ exports.deleteCampaign = async (req, res) => {
 
 
         // step 2: call removeCampaign()
+
         creator_record.removeCampaigns(campaign_id);
 
 
@@ -95,5 +99,39 @@ exports.deleteCampaign = async (req, res) => {
         console.log("Error is User: " + err);
         res.sendStatus(400);
     }
+}
+
+/**
+ * endpoint: "deletepublisher"
+ *
+ * SQL query:
+ * WITH my_installs AS (
+ *    SELECT creator.id as creator_id, country, campaign, platform, COUNT(*) AS install_count
+ *    FROM creator
+ *    LEFT JOIN install ON install.creator_id = creator.id
+ *   GROUP BY 1, 2, 3, 4
+ * ),
+ * pays AS (
+ *    SELECT my_installs.creator_id, SUM(install_count * price) AS pay
+ *    FROM my_installs
+ *    LEFT JOIN price ON campaign, country, platform
+ *    GROUP BY 1
+ * ),
+ * creator_installs AS (
+ *    SELECT creator_id, SUM(install_count) AS install_count
+ *    FROM my_installs
+ *    GROUP BY 1
+ * )
+ * output AS (
+ *   SELECT ci.creator_id, pay/install_count AS pay_per_install
+ *   FROM creator_installs ci
+ *   LEFT JOIN pays
+ * )
+ * SELECT * FROM output
+ */
+
+//TODO implement the SQL query to get creator's pay_per_install
+exports.deletePublisher = async (req, res) =>{
+
 }
 

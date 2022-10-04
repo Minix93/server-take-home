@@ -34,9 +34,13 @@ app.get('/creator', api.getCreatorById);
  */
 
 app.route("/campaign")
-    .get(api.getCampaign)
+    .get(api.getCampaign);
+
+app.route("/deletecampaign")
     .delete(api.deleteCampaign);
 
+app.route("/deletepublisher")
+    .delete(api.deletePublisher);
 
 
 
