@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6045263e-f740-4324-8472-0ed1eb21348d" name="Default" comment="1. set up the endpoint for removing campaigns from publishers with certain traffic breakdowns.&#10;&#10;2. write the potential sql code to realize the deletepublisher function">
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+    <list default="true" id="6045263e-f740-4324-8472-0ed1eb21348d" name="Default" comment="1. add several comments to the endpoints">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/api.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,7 +178,7 @@
       <workItem from="1606511696798" duration="9214000" />
       <workItem from="1664830058804" duration="5056000" />
       <workItem from="1664837909868" duration="418000" />
-      <workItem from="1664913298316" duration="12017000" />
+      <workItem from="1664913298316" duration="12601000" />
     </task>
     <task id="LOCAL-00001" summary="1. created model : campaign.js with coloumns : &quot;name&quot;, &quot;icon_url&quot; that maps to the campaign's name and icon image">
       <created>1664913566531</created>
@@ -291,7 +292,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664925762606</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="1. add several comments to the endpoints">
+      <created>1664926280506</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1664926280506</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -350,7 +358,8 @@
     <MESSAGE value="1. modify the input_data.json to add relationship between campaign and creator&#10;&#10;2. add new TODO to the endpoint in api.js" />
     <MESSAGE value="1. realize the relationship deletion between campaign and creator&#10;&#10;2. fixed several typo&#10;&#10;3. add new todo for delete function to realize timed deletion function" />
     <MESSAGE value="1. set up the endpoint for removing campaigns from publishers with certain traffic breakdowns.&#10;&#10;2. write the potential sql code to realize the deletepublisher function" />
-    <option name="LAST_COMMIT_MESSAGE" value="1. set up the endpoint for removing campaigns from publishers with certain traffic breakdowns.&#10;&#10;2. write the potential sql code to realize the deletepublisher function" />
+    <MESSAGE value="1. add several comments to the endpoints" />
+    <option name="LAST_COMMIT_MESSAGE" value="1. add several comments to the endpoints" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

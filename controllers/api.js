@@ -50,9 +50,13 @@ exports.getCreatorById = async (req, res) => {
  * TODO: refactor the code to accept request for certain creator's campaign, and destruct
  *  raw data to return
  *  sample dataformat {campaign.name, campaign.icon_url, price(matching country&platform), media_list}
+ *
+ *  step1 : get the creator_id from req.query and retrieve the campaign of the specified creator
+ *  step2: destruct the query result and rebuild the output to send back
  */
 exports.getCampaign = async (req, res) =>{
     try{
+
         let campaigns = await db.Campaign.findAll({
             include : [{ model: db.Media }, {model: db.Price}]
         });
