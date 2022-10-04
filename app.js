@@ -27,7 +27,7 @@ app.use('/', indexRouter);
  * TODO Add any additional endpoints here, and implement them in api.js
  */
 
-app.get('/creator', api.creator);
+app.get('/creator', api.getCreatorById);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
