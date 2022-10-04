@@ -26,7 +26,7 @@ var server = http.createServer(app);
  * Listen on provided port, on all network interfaces.
  */
 
-db.sequelize.sync().then(function() {
+db.sequelize.sync({force:true}).then(function() {
     sequelize_fixtures.loadFile('sample-data/input_data.json', db).then(function(){
       server.listen(port);
       server.on('error', onError);

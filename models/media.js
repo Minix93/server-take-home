@@ -5,7 +5,7 @@ module.exports = function(sequelize, DataTypes) {
         'Media',
         {
             media_type: { type: DataTypes.STRING },
-            media_url: { type: DataTypes.STRING },
+            media_url: { type: DataTypes.TEXT },
         },
         {
             createdAt: 'created_at',

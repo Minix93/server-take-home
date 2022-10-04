@@ -41,12 +41,12 @@ if (!global.hasOwnProperty('db')) {
      * Creator and Campaign --> Many to Many
      */
 
-    global.db.Creator.belongsToMany(db.Campaign, {
+    global.db.Creator.belongsToMany(global.db.Campaign, {
         through: "creator_campaign",
         as: "campaigns",
         foreignKey: "campaign_id"
     });
-    global.db.Campaign.belongsToMany(db.Creator, {
+    global.db.Campaign.belongsToMany(global.db.Creator, {
         through: "creator_campaign",
         as: "creators",
         foreignKey: "creator_id"
@@ -56,7 +56,7 @@ if (!global.hasOwnProperty('db')) {
      * Campaign and Price --> One to Many
      */
 
-    global.db.Campaign.hasMany(db.Price,{
+    global.db.Campaign.hasMany(global.db.Price,{
         onDelete: 'cascade',
         foreignKey: 'campaign_id',
     });
@@ -65,10 +65,11 @@ if (!global.hasOwnProperty('db')) {
      * Campaign and Media --> One to Many
      */
 
-    global.db.Campaign.hasMany(db.Media,{
+    global.db.Campaign.hasMany(global.db.Media,{
         onDelete: 'cascade',
         foreignKey: 'campaign_id',
     });
+    global.db.Media.belongsTo(global.db.Campaign);
 
 
 

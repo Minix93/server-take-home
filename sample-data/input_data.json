@@ -167,8 +167,24 @@
   {
     "model": "Campaign",
     "data": {
-      "name" : "Fitness Coach",
+      "name": "Fitness Coach",
       "icon_url": "https://is4-ssl.mzstatic.com/image/thumb/Purple124/v4/96/da/00/96da0035-89ac-e46d-5753-2e7449d7d716/source/512x512bb.jpg"
+    }
+  },
+  {
+    "model": "Media",
+    "data": {
+      "media_type" : "video",
+      "media_url" : "https://storage.googleapis.com/plugcoinprod.appspot.com/candycrushsaga%2F8c5c39a0-523f-4936-8655-749f72f416d4.mp4?GoogleAccessId=firebase-adminsdk-3v7ys%40plugcoinprod.iam.gserviceaccount.com&Expires=32225472000&Signature=EX4LTx%2B74ULa43Cc7maqPxKKPPcsMnd%2FU8lc5psIQG1tgxkHoKbBSmcQyXh9jI6WlBgHiSWM4dT5ovJs5SaM8IRfC%2FJsfDMY21JaQF00%2BKZsS8cFm0JvuNROIwB%2FacIZsLenWKosTospuJx%2Fstxtg5E7PEjVzHKlsnJJCyND4ro3BtKE1bposqZirKyb3nBu8Mk5wvnryljrhnoTU8w%2FpM8TvazcgV7E%2F38R3EsUFNv%2BSyA1%2FabWAOPl6DUZexWqJ%2B%2FYAvhzN41yqc8wgD0MMmcL8usRRFpD%2FXgtl02tbRS79CpW5nUS%2FK7fn690tpA7pWeWQQHvD23mh8WfwW9uYg%3D%3D",
+      "campaign_id" : 1
+    }
+  },
+  {
+    "model": "Media",
+    "data": {
+      "media_type" : "video",
+      "media_url" : "https://storage.googleapis.com/plugcoinprod.appspot.com/candycrushsaga%2F6240ece1-eccb-4fbf-9a27-ab2b02a37e61_watermarked.mp4?GoogleAccessId=firebase-adminsdk-3v7ys%40plugcoinprod.iam.gserviceaccount.com&Expires=16447017600&Signature=XNIX%2FKpgutJh%2BLzgI24DKa7lTLcT623aFiqbUuI4gXh%2FBF4ytPzLpkSH82GhgN6p9qgfeXGBA4ozbihGflWuEI8Cv5ljYWXzkPchDK4jw5wCXxswWqrCZXkAWTYozXD5siLOzNRNEDHeVEcSAx%2BYc3vJbkRumRucowUmaO9KuV7aYWaFXNbkihb56NDFmh5bzf%2Fx1FtKEwMyY5Ir9IXfc5NwpHyw2Ms8ETmTiGTKqvWH3oOO2LE5Gy4izRLnr4oJTFgrLhgu%2BOtY2sMokgwPZSqsjttrfs3eRGF7v%2FebQq0yZwLiR3Goo37chSsBBVVJmQIuhG64cCUFeiyrM4LoJQ%3D%3D",
+      "campaign_id" : 1
     }
   }
 ]
