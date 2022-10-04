@@ -29,6 +29,16 @@ app.use('/', indexRouter);
 
 app.get('/creator', api.getCreatorById);
 
+/**
+ * endpoint: "/campaign"
+ */
+
+app.route("/campaign")
+    .get(api.getCampaign);
+
+
+
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));

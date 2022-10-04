@@ -17,8 +17,8 @@ let {Sequelize, sequelize} = require('../service/db');
 //     }
 // };
 
-/*
-    TODO implement new endpoints here
+/**
+ * endpoint: "/creator"
  */
 
 exports.getCreatorById = async (req, res) => {
@@ -36,6 +36,22 @@ exports.getCreatorById = async (req, res) => {
         res.send(creator);
     }catch (err){
         console.log("Error is User: " + err);
-//         res.sendStatus(400);
+         res.sendStatus(400);
     }
 }
+
+/**
+ * endpoint: "/campaign"
+ */
+
+exports.getCampaign = async (req, res) =>{
+    try{
+        let campaigns = await db.Campaign.findAll();
+
+        res.send(campaigns);
+    }catch (err){
+        console.log("Error is User: " + err);
+         res.sendStatus(400);
+    }
+}
+
