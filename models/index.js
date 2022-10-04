@@ -44,12 +44,12 @@ if (!global.hasOwnProperty('db')) {
     global.db.Creator.belongsToMany(global.db.Campaign, {
         through: "creator_campaign",
         as: "campaigns",
-        foreignKey: "campaign_id"
+        foreignKey: "creator_id"
     });
     global.db.Campaign.belongsToMany(global.db.Creator, {
         through: "creator_campaign",
         as: "creators",
-        foreignKey: "creator_id"
+        foreignKey: "campaign_id"
     });
 
     /**

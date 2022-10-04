@@ -64,17 +64,32 @@ exports.getCampaign = async (req, res) =>{
     }
 }
 
+
+
+//TODO: refactor the function to realize relationship deletion in the future
+
 exports.deleteCampaign = async (req, res) => {
     try{
         let {publisher_id, campaign_id, remove_at} = req.query;
 
-        //TODO delete the associations between publisher and campaign in the request
+
 
         // step 1: find the two instance by id
+        let creator_record = await db.Creator.findOne({
+            where: {id : publisher_id}
+        });
 
-        // step 2: call removeCampaign() and removeCreator
+        let campaign_record = await db.Campaign.findOne({
+            where: {id : campaign_id}
+        });
 
-        // step 3: find matching instance in junction table creator_campaign and delete by calling destroy()
+
+        // step 2: call removeCampaign()
+        creator_record.removeCampaigns(campaign_id);
+
+
+
+        res.send("deleted");
 
     }catch (err){
         console.log("Error is User: " + err);

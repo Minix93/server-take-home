@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6045263e-f740-4324-8472-0ed1eb21348d" name="Default" comment="1. add Price medel to the eager loading of campaign">
+    <list default="true" id="6045263e-f740-4324-8472-0ed1eb21348d" name="Default" comment="1. modify the input_data.json to add relationship between campaign and creator&#10;&#10;2. add new TODO to the endpoint in api.js">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sample-data/input_data.json" beforeDir="false" afterPath="$PROJECT_DIR$/sample-data/input_data.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -180,7 +180,7 @@
       <workItem from="1606511696798" duration="9214000" />
       <workItem from="1664830058804" duration="5056000" />
       <workItem from="1664837909868" duration="418000" />
-      <workItem from="1664913298316" duration="8670000" />
+      <workItem from="1664913298316" duration="10383000" />
     </task>
     <task id="LOCAL-00001" summary="1. created model : campaign.js with coloumns : &quot;name&quot;, &quot;icon_url&quot; that maps to the campaign's name and icon image">
       <created>1664913566531</created>
@@ -273,7 +273,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664918615911</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="1. modify the input_data.json to add relationship between campaign and creator&#10;&#10;2. add new TODO to the endpoint in api.js">
+      <created>1664922328972</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1664922328972</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -329,7 +336,8 @@
     <MESSAGE value="1. load sample data of media to database&#10;2. modify the type of &quot;media_url&quot; column in the table media to resolve the issue of url value too long&#10;3. successfully loaded the media data in the database" />
     <MESSAGE value="1. refactor the endpoint get(&quot;/campaign&quot;) to eager loading data with media association and pass the test" />
     <MESSAGE value="1. add Price medel to the eager loading of campaign" />
-    <option name="LAST_COMMIT_MESSAGE" value="1. add Price medel to the eager loading of campaign" />
+    <MESSAGE value="1. modify the input_data.json to add relationship between campaign and creator&#10;&#10;2. add new TODO to the endpoint in api.js" />
+    <option name="LAST_COMMIT_MESSAGE" value="1. modify the input_data.json to add relationship between campaign and creator&#10;&#10;2. add new TODO to the endpoint in api.js" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
