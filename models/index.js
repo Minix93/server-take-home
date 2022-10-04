@@ -52,5 +52,18 @@ if (!global.hasOwnProperty('db')) {
         foreignKey: "creator_id"
     });
 
+    /**
+     * Campaign and Price --> One to Many
+     */
+
+    global.db.Campaign.hasMany(db.Price,{
+        onDelete: 'cascade',
+        foreignKey: 'campaign_id',
+    });
+
+
+
+
+
 
 }
