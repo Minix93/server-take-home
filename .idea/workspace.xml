@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6045263e-f740-4324-8472-0ed1eb21348d" name="Default" comment="1. load sample data of media to database&#10;2. modify the type of &quot;media_url&quot; column in the table media to resolve the issue of url value too long&#10;3. successfully loaded the media data in the database">
+    <list default="true" id="6045263e-f740-4324-8472-0ed1eb21348d" name="Default" comment="1. refactor the endpoint get(&quot;/campaign&quot;) to eager loading data with media association and pass the test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample-data/input_data.json" beforeDir="false" afterPath="$PROJECT_DIR$/sample-data/input_data.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,7 +180,7 @@
       <workItem from="1606511696798" duration="9214000" />
       <workItem from="1664830058804" duration="5056000" />
       <workItem from="1664837909868" duration="418000" />
-      <workItem from="1664913298316" duration="4777000" />
+      <workItem from="1664913298316" duration="5219000" />
     </task>
     <task id="LOCAL-00001" summary="1. created model : campaign.js with coloumns : &quot;name&quot;, &quot;icon_url&quot; that maps to the campaign's name and icon image">
       <created>1664913566531</created>
@@ -257,7 +259,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664917899189</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="1. refactor the endpoint get(&quot;/campaign&quot;) to eager loading data with media association and pass the test">
+      <created>1664918181161</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1664918181161</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -311,7 +320,8 @@
     <MESSAGE value="1. refactoring the api endpoint of getCreator by their id and pass the postman test" />
     <MESSAGE value="1. add endpoint &quot;/campaign&quot; to get a list of all campaigns and pass the test" />
     <MESSAGE value="1. load sample data of media to database&#10;2. modify the type of &quot;media_url&quot; column in the table media to resolve the issue of url value too long&#10;3. successfully loaded the media data in the database" />
-    <option name="LAST_COMMIT_MESSAGE" value="1. load sample data of media to database&#10;2. modify the type of &quot;media_url&quot; column in the table media to resolve the issue of url value too long&#10;3. successfully loaded the media data in the database" />
+    <MESSAGE value="1. refactor the endpoint get(&quot;/campaign&quot;) to eager loading data with media association and pass the test" />
+    <option name="LAST_COMMIT_MESSAGE" value="1. refactor the endpoint get(&quot;/campaign&quot;) to eager loading data with media association and pass the test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

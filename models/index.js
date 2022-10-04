@@ -60,6 +60,7 @@ if (!global.hasOwnProperty('db')) {
         onDelete: 'cascade',
         foreignKey: 'campaign_id',
     });
+    global.db.Price.belongsTo(global.db.Campaign);
 
     /**
      * Campaign and Media --> One to Many

@@ -186,5 +186,23 @@
       "media_url" : "https://storage.googleapis.com/plugcoinprod.appspot.com/candycrushsaga%2F6240ece1-eccb-4fbf-9a27-ab2b02a37e61_watermarked.mp4?GoogleAccessId=firebase-adminsdk-3v7ys%40plugcoinprod.iam.gserviceaccount.com&Expires=16447017600&Signature=XNIX%2FKpgutJh%2BLzgI24DKa7lTLcT623aFiqbUuI4gXh%2FBF4ytPzLpkSH82GhgN6p9qgfeXGBA4ozbihGflWuEI8Cv5ljYWXzkPchDK4jw5wCXxswWqrCZXkAWTYozXD5siLOzNRNEDHeVEcSAx%2BYc3vJbkRumRucowUmaO9KuV7aYWaFXNbkihb56NDFmh5bzf%2Fx1FtKEwMyY5Ir9IXfc5NwpHyw2Ms8ETmTiGTKqvWH3oOO2LE5Gy4izRLnr4oJTFgrLhgu%2BOtY2sMokgwPZSqsjttrfs3eRGF7v%2FebQq0yZwLiR3Goo37chSsBBVVJmQIuhG64cCUFeiyrM4LoJQ%3D%3D",
       "campaign_id" : 1
     }
+  },
+  {
+    "model" : "Price",
+    "data": {
+      "platform" : "ios",
+      "country" : "US",
+      "price" : 1,
+      "campaign_id" : 1
+    }
+  },
+  {
+    "model" : "Price",
+    "data": {
+      "platform" : "android",
+      "country" : "US",
+      "price" : 0.5,
+      "campaign_id" : 1
+    }
   }
 ]

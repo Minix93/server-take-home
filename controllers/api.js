@@ -47,7 +47,7 @@ exports.getCreatorById = async (req, res) => {
 exports.getCampaign = async (req, res) =>{
     try{
         let campaigns = await db.Campaign.findAll({
-            include : { model: db.Media }
+            include : [{ model: db.Media }, {model: db.Price}]
         });
 
         res.send(campaigns);
