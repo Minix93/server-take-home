@@ -23,22 +23,36 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 
-/**
- * TODO Add any additional endpoints here, and implement them in api.js
- */
 
 app.get('/creator', api.getCreatorById);
 
 /**
  * endpoint: "/campaign"
+ *
+ * function: get all campaigns to render the page
  */
 
 app.route("/campaign")
     .get(api.getCampaign);
 
+/**
+ * endpoint: "/deletecampaign"
+ *
+ * function: delete the relationship between campaign and creator specified in the query
+ *
+ * params: publisher_id, campaign_id, remove_at
+ */
+
+
 app.route("/deletecampaign")
     .delete(api.deleteCampaign);
 
+/**
+ * endpoint: "/deletepublisher"
+ *
+ * function: delete the publisher that doesn't meet certain traffic breakdowns
+ *
+ */
 app.route("/deletepublisher")
     .delete(api.deletePublisher);
 

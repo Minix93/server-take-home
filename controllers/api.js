@@ -75,8 +75,6 @@ exports.deleteCampaign = async (req, res) => {
     try{
         let {publisher_id, campaign_id, remove_at} = req.query;
 
-
-
         // step 1: find the two instance by id
         let creator_record = await db.Creator.findOne({
             where: {id : publisher_id}
@@ -86,12 +84,9 @@ exports.deleteCampaign = async (req, res) => {
             where: {id : campaign_id}
         });
 
-
         // step 2: call removeCampaign()
 
         creator_record.removeCampaigns(campaign_id);
-
-
 
         res.send("deleted");
 
