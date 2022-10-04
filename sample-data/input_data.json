@@ -156,5 +156,19 @@
       "country": "MX",
       "creator_id": 2
     }
+  },
+  {
+    "model": "Campaign",
+    "data": {
+      "name": "Candy Crush",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/25/7a/95/257a95b9-9f3b-e07d-04f9-40890d4f8f31/source/512x512bb.jpg"
+    }
+  },
+  {
+    "model": "Campaign",
+    "data": {
+      "name" : "Fitness Coach",
+      "icon_url": "https://is4-ssl.mzstatic.com/image/thumb/Purple124/v4/96/da/00/96da0035-89ac-e46d-5753-2e7449d7d716/source/512x512bb.jpg"
+    }
   }
 ]

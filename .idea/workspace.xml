@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6045263e-f740-4324-8472-0ed1eb21348d" name="Default" comment="1. created model : campaign.js with coloumns : &quot;name&quot;, &quot;icon_url&quot; that maps to the campaign's name and icon image">
-      <change afterPath="$PROJECT_DIR$/models/price.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="6045263e-f740-4324-8472-0ed1eb21348d" name="Default" comment="1. created model : media.js with coloumns : &quot;media_type&quot;, &quot;media_url&quot;">
+      <change beforePath="$PROJECT_DIR$/sample-data/input_data.json" beforeDir="false" afterPath="$PROJECT_DIR$/sample-data/input_data.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,7 +177,7 @@
       <workItem from="1606511696798" duration="9214000" />
       <workItem from="1664830058804" duration="5056000" />
       <workItem from="1664837909868" duration="418000" />
-      <workItem from="1664913298316" duration="452000" />
+      <workItem from="1664913298316" duration="770000" />
     </task>
     <task id="LOCAL-00001" summary="1. created model : campaign.js with coloumns : &quot;name&quot;, &quot;icon_url&quot; that maps to the campaign's name and icon image">
       <created>1664913566531</created>
@@ -187,7 +186,21 @@
       <option name="project" value="LOCAL" />
       <updated>1664913566531</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="1. created model : price.js with coloumns : &quot;platform&quot;, &quot;country&quot;, &quot;price&quot;">
+      <created>1664913786806</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1664913786806</updated>
+    </task>
+    <task id="LOCAL-00003" summary="1. created model : media.js with coloumns : &quot;media_type&quot;, &quot;media_url&quot;">
+      <created>1664913949008</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1664913949008</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -231,7 +244,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1. created model : campaign.js with coloumns : &quot;name&quot;, &quot;icon_url&quot; that maps to the campaign's name and icon image" />
-    <option name="LAST_COMMIT_MESSAGE" value="1. created model : campaign.js with coloumns : &quot;name&quot;, &quot;icon_url&quot; that maps to the campaign's name and icon image" />
+    <MESSAGE value="1. created model : price.js with coloumns : &quot;platform&quot;, &quot;country&quot;, &quot;price&quot;" />
+    <MESSAGE value="1. created model : media.js with coloumns : &quot;media_type&quot;, &quot;media_url&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="1. created model : media.js with coloumns : &quot;media_type&quot;, &quot;media_url&quot;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
