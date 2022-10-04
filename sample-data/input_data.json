@@ -3,14 +3,16 @@
     "model": "Creator",
     "data": {
       "firstname": "Tim",
-      "lastname": "Lenardo"
+      "lastname": "Lenardo",
+      "campains": [2]
     }
   },
   {
     "model": "Creator",
     "data": {
       "firstname": "JJ",
-      "lastname": "Maxwell"
+      "lastname": "Maxwell",
+      "campaigns": [1,2]
     }
   },
   {
@@ -161,14 +163,16 @@
     "model": "Campaign",
     "data": {
       "name": "Candy Crush",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/25/7a/95/257a95b9-9f3b-e07d-04f9-40890d4f8f31/source/512x512bb.jpg"
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/25/7a/95/257a95b9-9f3b-e07d-04f9-40890d4f8f31/source/512x512bb.jpg",
+      "creators": [2]
     }
   },
   {
     "model": "Campaign",
     "data": {
       "name": "Fitness Coach",
-      "icon_url": "https://is4-ssl.mzstatic.com/image/thumb/Purple124/v4/96/da/00/96da0035-89ac-e46d-5753-2e7449d7d716/source/512x512bb.jpg"
+      "icon_url": "https://is4-ssl.mzstatic.com/image/thumb/Purple124/v4/96/da/00/96da0035-89ac-e46d-5753-2e7449d7d716/source/512x512bb.jpg",
+      "creators" : [1,2]
     }
   },
   {
