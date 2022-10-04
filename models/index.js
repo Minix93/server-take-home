@@ -8,6 +8,9 @@ if (!global.hasOwnProperty('db')) {
         sequelize: sequelize,
         Creator: require(__dirname + '/creator')(sequelize, Sequelize.DataTypes),
         Install: require(__dirname + '/install')(sequelize, Sequelize.DataTypes),
+        Campaign: require(__dirname + '/campaign')(sequelize, Sequelize.DataTypes),
+        Price: require(__dirname + '/price')(sequelize, Sequelize.DataTypes),
+        Media: require(__dirname + '/media')(sequelize, Sequelize.DataTypes)
         /*
         *
         * TODO add any additional models here.
